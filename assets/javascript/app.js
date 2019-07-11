@@ -4,7 +4,7 @@
 $(document).ready(function () {
 
   // When button "GO" is clicked.......
-  $("#GO").on("click", function () {
+  $("#GO").on("click", function (letsGOOO) {
 
     // Pull text from search box
     var searchParam = $("#search-box").val().trim();
