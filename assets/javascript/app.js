@@ -4,7 +4,7 @@
 $(document).ready(function () {
 
   // When button "GO" is clicked.......
-  $("#GO").on("click", function (letsGOOOOOOO) {
+  $("#GO").on("click", function (letsGOOO) {
 
     // Pull text from search box
     var searchParam = $("#search-box").val().trim();
@@ -29,7 +29,7 @@ $(document).ready(function () {
     //     console.log("=================================")
     // });
 
-    // Referencing a link to a JSON example of a UTELLY AJAX response instead of making AJAX calls to save $$$
+    // Referencing a link to an example of a UTELLY AJAX response rather then making calls to save $$
     // This will always return data for the movie "Interstellar"
     // Remove before final deployment
     $.getJSON("https://api.myjson.com/bins/173e67", function (data) {
