@@ -16,20 +16,20 @@ $(document).ready(function () {
 
     // AJAX CALL FOR UTELLY API
     // Leave commented during development to reduce amount of calls made
-    // $.ajax({
-    //   url: "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=" + searchParam + "&country=us",
-    //   method: "GET",
-    //   headers: {
-    //     "X-RapidAPI-Host": "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
-    //     "X-RapidAPI-Key": "d6bd752cddmshce9fab663c6a442p1574b2jsncf974a1b4d76",  
-    //   }
-    // }).then(function(utellyResponse) {
-    //   console.log("UTELLY RESPONSE")
-    //     console.log(utellyResponse);
-    //     console.log("=================================")
-    // });
+    $.ajax({
+      url: "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=" + searchParam + "&country=us",
+      method: "GET",
+      headers: {
+        "X-RapidAPI-Host": "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
+        "X-RapidAPI-Key": "d6bd752cddmshce9fab663c6a442p1574b2jsncf974a1b4d76",  
+      }
+    }).then(function(utellyResponse) {
+      console.log("UTELLY RESPONSE")
+        console.log(utellyResponse);
+        console.log("=================================")
+    });
 
-    // Referencing a link to a JSON example of a UTELLY AJAX response instead of making AJAX calls to save $$$
+    // Referencing a link to an example of a UTELLY AJAX response rather then making calls to save $$
     // This will always return data for the movie "Interstellar"
     // Remove before final deployment
     $.getJSON("https://api.myjson.com/bins/173e67", function (data) {
