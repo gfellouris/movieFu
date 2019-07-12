@@ -1,0 +1,68 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  padding: 20px;
+}
+
+button {
+  background: #952322;
+}
+
+.card {
+  opacity: 0.8;
+}
+.form-control {
+  width: 400px;
+  display: inline;
+}
+
+/* Custom IDs */
+#content {
+  background-image: url("../images/moviefu-bg.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 10px;
+  /* background-size: 100%; */
+  /* height: 100%; */
+  /* height: 100vh; */
+}
+
+#container-main {
+  background-color: black;
+  opacity: 0.9;
+  padding: 10px;
+  margin: auto;
+}
+#container-body {
+  width: 1008px;
+  margin: auto;
+}
+#container-search {
+  background-color: #a6a4a9;
+  opacity: 0.9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+}
+/* Custom classess */
+.font1 {
+  color: #a6a4a9;
+}
+
+.font2 {
+  color: #747378;
+}
+
+.font3 {
+  color: #952322;
+}
+.faTitleFont {
+  color: red;
+}
