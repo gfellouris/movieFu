@@ -34,6 +34,10 @@ $(document).ready(function () {
     // Remove before final deployment
     $.getJSON("https://api.myjson.com/bins/173e67", function (data) {
       console.log(data);
+      $("#UtellyAPI").text(data.results[0].id);
+      console.log(data.results[0].locations[0].display_name)
+      $("#UtellyAPI").text(data.results[0].id);
+      console.log(data.results[0].locations[1].display_name)
     });
 
 
@@ -43,7 +47,29 @@ $(document).ready(function () {
       method: "GET"
     }).then(function (omdbResponse) {
       console.log(omdbResponse);
+    // Creates Variable omdbDIV to a new div that will append to omdbAPI
+      var omdbDiv = $("<div class='movie-details'>")
+    // Creates Varible poster to hold the poster img retrieved from omdb API
+      var poster = omdbResponse.Poster
+      var image = $("<img>").attr("src", poster);
+    // Appends poster image to omdb Div
+      omdbDiv.append(image);
+
+
+      var title = omdbResponse.Title
+      var released = omdbResponse.Released
+      var rated = omdbResponse.Rated
+      var runtime = omdbResponse.Runtime
+      var genre = omdbResponse.Genre
+      console.log("Title: " + omdbResponse.Title)
+      console.log("Released: " + omdbResponse.Released)
+      console.log("Rated: " + omdbResponse.Rated)
+      console.log("Run Time: " + omdbResponse.Runtime)
+      console.log("Genre: " + omdbResponse.Genre)
+      $("#omdbAPI").append(omdbDiv)
     });
+
+    
 
     // Referencing a JSON example of an OMDB AJAX response
     // Just in case OMDB's API isn't working 
