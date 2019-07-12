@@ -22,10 +22,87 @@
     <title>MovieFu</title>
 </head>
 <body>
-    
-  <input type="text" id="search-box">
-  <button id="GO" placeholder="Search Database" name="searchkey" aria-required="true">SEARCH</button>
+    <header>
+<!-- Aligns the h1 text elemtents to the center of the page-->
+        <h1 class="text-center"> MovieFu </h1>
+<br>
+<!-- Aligns the h2 text elemtents to the center of the page-->
+        <h2 class="text-center"small class="text-muted">Find Any Movie or TV show on all the top streaming platforms!</small></h2>
+<br>
+        
+<br>
 
-  <script src="assets/javascript/app.js"></script>
-</body>
-</html>
+    </header>
+<!-- Button created for user input to call utelly API and OMDB API for movie/tv title-->
+        <input type="text" id="search-box">
+        <button class="btn-center" id="GO" placeholder="Search Database" name="searchkey" aria-required="true">SEARCH</button>
+
+<!-- Container for Grid System-->
+        <div class=".container-fluid">
+                <div class="row">
+                  <div class="col-lg-6">
+                      <!-- Column for UTELLY API -->
+                   <h3 class="text-center">Movie/Tv Provider</h3>
+                 <!-- Table for updating which service carries the users input movie title-->
+                   <table class="table table-dark table-hover">
+                        <thead>
+                          <tr>
+                              <!-- Table Headers for Utelly API-->
+                            <th scope="col">Available</th>
+                            <th scope="col">Provider</th>
+                            <th scope="col">Subscription</th>
+                            <th scope="col">Buy</th>
+                            <th scope="col">Rent</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">X</th>
+                <!-- First Streaming Service referred to -->
+                            <td>Netflix</td>
+                            <td>Yes</td>
+                            <td>$0.00</td>
+                            <td>No</td>
+                          </tr>
+                          <tr>
+                <!-- Second Streaming Service referred to -->
+                            <th scope="row">X</th>
+                            <td>Amazon Prime</td>
+                            <td>Yes</td>
+                            <td>$0.00</td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                <!-- Third Streaming Service referred to -->
+                            <th scope="row">X</th>
+                            <td>Hulu</td>
+                            <td>Yes</td>
+                            <td>$0.00</td>
+                            <td>No</td>
+                          </tr>
+                          <tr>
+                <!-- Fourth Streaming Service referred to -->
+                            <th scope="row">X</th>
+                            <td>Itunes</td>
+                            <td>No</td>
+                            <td>$0.00</td>
+                            <td>Yes</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                <!-- Column for OMDB API Information -->
+                  <div class="col-lg-6">
+                    <h3 class="text-center">Movie/TV Details</h3>
+                  </div>
+                </div>
+                </div>
+
+
+<!-- The Team who Designed this amazing Website/App
+<footer>
+
+<p>Designed by George Fellouris, Kristen Sherman, Eric Thiel and Greg Manco<p>
+
+</footer>
+-->
