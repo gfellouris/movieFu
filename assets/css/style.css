@@ -7,16 +7,43 @@ header {
   padding: 20px;
 }
 
-button {
-  background: #952322;
-}
-
 .card {
   opacity: 0.8;
 }
+
+/*  Custom Search controls */
 .form-control {
   width: 400px;
   display: inline;
+  cursor: pointer;
+}
+input {
+  margin: 0px;
+}
+
+.searchBtn {
+  margin: 0px;
+}
+
+#container-search {
+  background-color: #4e4e4e;
+  opacity: 0.9;
+  padding: 5px 5px;
+  /* border-radius: 10px; */
+  padding: 10px;
+  margin: auto;
+}
+
+#searchclear {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  height: 14px;
+  margin: auto;
+  font-size: 14px;
+  cursor: pointer;
+  color: #ccc;
 }
 
 /* Custom IDs */
@@ -28,7 +55,7 @@ button {
   margin: auto;
   padding: 10px;
   /* background-size: 100%; */
-  /* height: 100vh; */
+  height: 100vh;
   /* height: 100%; */
 }
 
@@ -42,16 +69,12 @@ button {
   width: 1008px;
   margin: auto;
 }
-#container-search {
-  background-color: #a6a4a9;
-  opacity: 0.9;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 15px;
-}
 /* Custom classess */
+.cardTitleFont {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #747378;
+  font-size: 17px;
+}
 .font1 {
   color: #a6a4a9;
 }

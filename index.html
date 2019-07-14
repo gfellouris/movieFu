@@ -26,43 +26,37 @@
 
 <body>
 
-  <!-- <header>
-     <div class="jumbotron bg-dark">
-      <h1 class="text-center"> <span class="font1">Mov</span><span class="font2">ie</span><span class="font3">Fu</span>
-      </h1>
-
-      <br>
-
-      <h4 class="text-center font2" small class="text-muted">
-        Find Any Movie or TV show on all the top streaming
-        platforms!
-      </h4>
-    </div>
-  </header> -->
-
-
   <div id="content">
 
     <header>
-      <h1 class="text-center"> <span class="font1">Mov</span><span class="font2">ie</span><span class="font3">Fu</span>
+      <!-- <h1 class="text-center"> <span class="font1">Mov</span><span class="font2">ie</span><span class="font3">Fu</span>
         <br>
         <h4 class="text-center font2" small class="text-muted">
-          Find <em class="font3">any</em> Movie or <em class="font3">any</em> TV show on <em class="font3">any</em> of
-          the top streaming
-          platforms!
-        </h4>
+          Find <em class="font3">any</em> Movie or TV show on <em class="font3">any</em> of
+          the top streaming platforms!
+        </h4> -->
+
+      <div class="container" id="container-search">
+        <img src="assets/images/moviefu-logo.png">
+
+        <input type="text" placeholder="Search for a Movie or TV show..." class="form-control" id="search-box">
+        <button class="btn btn-danger searchBtn" id="GO" name="searchkey" aria-required="true">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
     </header>
 
     <div class="container" id="container-main">
       <div class="container" id="container-body">
-        <div id="container-search">
-          <!-- Button created for user input to call utelly API and OMDB API for movie/tv title-->
-<img src="assets/images/moviefu-logo.png">
-          <input type="text" placeholder="Search for a Movie or TV show..." class="form-control" id="search-box">
-          <button class="btn btn-danger" id="GO" name="searchkey" aria-required="true"><i
-              class="fa fa-search"></i></button>
 
-        </div>
+        <!-- <div id="container-search">
+          <img src="assets/images/moviefu-logo.png">
+
+          <input type="text" placeholder="Search for a Movie or TV show..." class="form-control" id="search-box">
+          <button class="btn btn-danger searchBtn" id="GO" name="searchkey" aria-required="true"><i
+              class="fa fa-search"></i></button>
+        </div> -->
 
         <br>
 
@@ -72,7 +66,7 @@
             <div class="col-lg-6">
               <!-- Column for UTELLY API -->
               <div class="card card-default">
-                <div class="card-header">
+                <div class="card-header cardTitleFont">
                   <strong><i class="fas fa-ticket-alt faTitleFont"></i> Movie/TV Provider</strong>
                 </div>
                 <div class="card-body">
@@ -132,7 +126,7 @@
             <!-- Column for OMDB API Information -->
             <div class="col-lg-6">
               <div class="card card-default">
-                <div class="card-header">
+                <div class="card-header cardTitleFont">
                   <strong><i class="fas fa-film faTitleFont"></i> Movie/TV Details</strong>
                 </div>
                 <div class="card-body">
