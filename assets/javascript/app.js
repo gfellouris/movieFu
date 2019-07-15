@@ -60,7 +60,7 @@ $(document).ready(function () {
 
       // Preparing to append data from the utelly api call to provider1 div.
       $("#provider1").html(data.results[0].locations[0].display_name);
-      console.log("Steaming Service: " + data.results[0].locations[0].display_name)
+      console.log("Steaming Service: " + data.results[0].locations[0].display_name);
       // Preparing to append data from the utelly api call to provider2 div.     
       $("#provider2").html(data.results[0].locations[1].display_name);
       console.log(data.results[0].locations[1].display_name);
