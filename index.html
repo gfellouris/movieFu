@@ -29,20 +29,29 @@
   <div id="content">
 
     <header>
-      <!-- <h1 class="text-center"> <span class="font1">Mov</span><span class="font2">ie</span><span class="font3">Fu</span>
-        <br>
-        <h4 class="text-center font2" small class="text-muted">
-          Find <em class="font3">any</em> Movie or TV show on <em class="font3">any</em> of
-          the top streaming platforms!
-        </h4> -->
-
+      <!-- Nav bar -->
       <div class="container" id="container-search">
-        <img src="assets/images/moviefu-logo.png">
-
-        <input type="text" placeholder="Search for a Movie or TV show..." class="form-control" id="search-box">
-        <button class="btn btn-danger searchBtn" id="GO" name="searchkey" aria-required="true">
-          <i class="fa fa-search"></i>
-        </button>
+        <nav class="navbar p-0">
+          <nav class="navbar">
+            <!-- Logo -->
+            <nav class="navbar-brand" href="#">
+              <img src="assets/images/moviefu-logo.png">
+            </nav>
+            <!-- Movie Search Box and Button -->
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search for a Movie or TV show..."
+                aria-label="Search" id="movieSearch">
+              <button class="btn btn-danger my-2 my-sm-0" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </nav>
+          <!-- Login Button and User Info -->
+          <nav class="navbar">
+            <span class="navbar-text text-white mr-4 p-0" id="user"></span>
+            <button class="btn btn-danger text-center log-in">Login with Google</button>
+          </nav>
+        </nav>
       </div>
     </header>
 
@@ -59,7 +68,7 @@
         <br>
 
         <!-- Container for Grid System-->
-        <div class=".container-fluid">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6">
               <!-- Column for UTELLY API -->
@@ -149,7 +158,11 @@
   </div> <!-- content -->
 
 
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
 
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
   <script src="assets/javascript/app.js"></script>
 </body>
 
