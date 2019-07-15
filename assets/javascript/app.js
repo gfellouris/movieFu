@@ -61,6 +61,11 @@ $(document).ready(function () {
       var rated = omdbResponse.Rated
       var runtime = omdbResponse.Runtime
       var genre = omdbResponse.Genre
+      omdbDiv.append("Title: " +  title)
+      omdbDiv.append("Released: " + released)
+      omdbDiv.append("Rateing: " + rated)
+      omdbDiv.append("Runtime: " + runtime)
+      omdbDiv.append("Genre: " + genre)
       console.log("Title: " + omdbResponse.Title)
       console.log("Released: " + omdbResponse.Released)
       console.log("Rated: " + omdbResponse.Rated)
