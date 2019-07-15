@@ -73,7 +73,7 @@ $(document).ready(function () {
   // Functions that handle what happens after a user logs in or out
   const isLoggedIn = user => {
     //DO SOMETHING
-    $("#user").text(`Welcome,`)
+    $("#user").text(user.displayName)
     $("#email").text(user.email)
     $(".start").append(`<img src="https://user-images.githubusercontent.com/42519030/54242956-f424a380-44fc-11e9-89e3-76ece045f9ca.jpg"></img>`)
   }
