@@ -60,7 +60,6 @@
 
         <!-- <div id="container-search">
           <img src="assets/images/moviefu-logo.png">
-
           <input type="text" placeholder="Search for a Movie or TV show..." class="form-control" id="search-box">
           <button class="btn btn-danger searchBtn" id="GO" name="searchkey" aria-required="true"><i
               class="fa fa-search"></i></button>
@@ -69,7 +68,7 @@
         <br>
 
         <!-- Container for Grid System-->
-        <div class="container-fluid">
+        <div class=".container-fluid">
           <div class="row">
             <div class="col-lg-6">
               <!-- Column for UTELLY API -->
@@ -79,6 +78,9 @@
                 </div>
                 <div class="card-body">
                   <div id="movie-provider"></div>
+                 <!--     <div id="provider1"></div>
+                      <div id="provider2"></div>
+                      <div id="provider3"></div> -->
                   <!-- Table for updating which service carries the users input movie title-->
                   <table class="table table-dark table-hover">
                     <thead>
@@ -86,43 +88,35 @@
                         <!-- Table Headers for Utelly API-->
                         <th scope="col">Available</th>
                         <th scope="col">Provider</th>
-                        <th scope="col">Subscription</th>
+                       <!-- <th scope="col">Subscription</th>
                         <th scope="col">Buy</th>
-                        <th scope="col">Rent</th>
+                        <th scope="col">Rent</th> -->
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">X</th>
+                        <th id="icon1" scope="row">X</th>
                         <!-- First Streaming Service referred to -->
-                        <td>Netflix</td>
-                        <td>Yes</td>
-                        <td>$0.00</td>
-                        <td>No</td>
+                        <td id="provider1"></td>
+                    
                       </tr>
                       <tr>
                         <!-- Second Streaming Service referred to -->
-                        <th scope="row">X</th>
-                        <td>Amazon Prime</td>
-                        <td>Yes</td>
-                        <td>$0.00</td>
-                        <td>Yes</td>
+                        <th id="icon2" scope="row">X</th>
+                        <td id="provider2"></td>
+                        
                       </tr>
                       <tr>
                         <!-- Third Streaming Service referred to -->
-                        <th scope="row">X</th>
-                        <td>Hulu</td>
-                        <td>Yes</td>
-                        <td>$0.00</td>
-                        <td>No</td>
+                        <th id="icon3" scope="row">X</th>
+                        <td id="provider3"></td>
+                       
                       </tr>
                       <tr>
                         <!-- Fourth Streaming Service referred to -->
-                        <th scope="row">X</th>
-                        <td>i-tunes</td>
-                        <td>No</td>
-                        <td>$0.00</td>
-                        <td>Yes</td>
+                        <th id="icon4" scope="row">X</th>
+                        <td></td>
+                     
                       </tr>
                     </tbody>
                   </table>
@@ -139,12 +133,18 @@
                 </div>
                 <div class="card-body">
                   <div id="movie-details"></div>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem et recusandae odio, architecto laborum
+                  <div id="poster"></div>
+                  <div id="title"></div>
+                  <div id="released"></div>
+                  <div id="rated"></div>
+                  <div id="runtime"></div>
+                  <div id="genre"></div>
+                <!--  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem et recusandae odio, architecto laborum
                   accusantium libero ducimus, cupiditate explicabo assumenda quaerat. Nisi nulla provident neque
                   blanditiis, eaque sunt corporis dicta.
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam unde illum magnam nostrum debitis ipsam
                   corporis quae modi nulla in quasi officia possimus, quia recusandae autem explicabo temporibus dolore
-                  aliquid.
+                  aliquid. -->
                 </div>
               </div>
 
