@@ -73,15 +73,18 @@ $(document).ready(function () {
   // Functions that handle what happens after a user logs in or out
   const isLoggedIn = user => {
     //DO SOMETHING
-    $("#user").text(`Welcome,`)
-    $("#email").text(user.email)
-    $(".start").append(`<img src="https://user-images.githubusercontent.com/42519030/54242956-f424a380-44fc-11e9-89e3-76ece045f9ca.jpg"></img>`)
+    var x = document.getElementById("container-body");
+    $("#user").text("User: " + user.displayName)
+    x.style.visibility = "visible";
+   
+    
   }
 
   const isLoggedOut = () => {
     //DO SOMETHING
-    $("#user").html(`Goodbye`);
-    $(".start, .welcome").empty()
+    $("#user").empty()
+    var x = document.getElementById("container-body");
+    x.style.visibility = "hidden";
   }
 
 
