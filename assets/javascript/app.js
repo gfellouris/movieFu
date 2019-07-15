@@ -34,9 +34,26 @@ $(document).ready(function () {
     // Remove before final deployment
     $.getJSON("https://api.myjson.com/bins/173e67", function (data) {
       console.log(data);
-      $("#UtellyAPI").text(data.results[0].id);
-      console.log(data.results[0].locations[0].display_name)
-      $("#UtellyAPI").text(data.results[0].id);
+
+
+// Currently not working - Grabbing provider div and trying to append icon from utelly api
+      var iconDiv = $("#provider1")
+
+      var icon = data.results[0].locations[0].icon
+      var iconIMG = $("<img>").attr("src", icon);
+
+      iconDiv.append(iconIMG)
+
+    
+
+
+
+
+
+
+      $("#provider1").text(data.results[0].locations[0].display_name);
+      console.log( "Steaming Service: " + data.results[0].locations[0].display_name)
+      $("#provider2").text(data.results[0].locations[1].display_name);
       console.log(data.results[0].locations[1].display_name)
     });
 
@@ -47,31 +64,39 @@ $(document).ready(function () {
       method: "GET"
     }).then(function (omdbResponse) {
       console.log(omdbResponse);
-    // Creates Variable omdbDIV to a new div that will append to omdbAPI
-      var omdbDiv = $("<div class='movie-details'>")
+    // Creates Variable omdbDIV to a new div that will append to poster div
+      var omdbDiv = $("#poster")
     // Creates Varible poster to hold the poster img retrieved from omdb API
       var poster = omdbResponse.Poster
       var image = $("<img>").attr("src", poster);
     // Appends poster image to omdb Div
       omdbDiv.append(image);
 
+      
+        // For Grabbing Movie Details - OMDB API Reponse Needed
 
-      var title = omdbResponse.Title
+// Grabs omddAPI response.Title and appends it to #title div
+      var title =  omdbResponse.Title
+      $("#title").append("Title: " + title);
+// Grabs omddAPI response.Released and appends it to #relased div
       var released = omdbResponse.Released
+      $("#released").append("Released: " + released);
+//  Grabs omddAPI response.Rated and appends it to #rated div
       var rated = omdbResponse.Rated
+      $("#rated").append("Rating: " + rated);
+//  Grabs omddAPI response.Runtime and appends it to #runtime div     
       var runtime = omdbResponse.Runtime
-      var genre = omdbResponse.Genre
-      omdbDiv.append("Title: " +  title)
-      omdbDiv.append("Released: " + released)
-      omdbDiv.append("Rateing: " + rated)
-      omdbDiv.append("Runtime: " + runtime)
-      omdbDiv.append("Genre: " + genre)
-      console.log("Title: " + omdbResponse.Title)
-      console.log("Released: " + omdbResponse.Released)
-      console.log("Rated: " + omdbResponse.Rated)
-      console.log("Run Time: " + omdbResponse.Runtime)
-      console.log("Genre: " + omdbResponse.Genre)
-      $("#omdbAPI").append(omdbDiv)
+      $("#runtime").append("Run Time: " + runtime);
+// Grabs omdbAPI response.Genre and appends it to #genre div
+//      var genre = omdbResponse.Genre
+//      $("#genre") = append("Genre: " + genre);
+
+      console.log("Title: " + title);
+      console.log("Released: " + released);
+      console.log("Rated: " + rated);
+      console.log("Run Time: " + runtime);
+//      console.log("Genre: " + genre);
+//      $("movie-details").append(omdbDiv)
     });
 
     

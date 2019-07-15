@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  padding: 20px;
+}
+
+.card {
+  opacity: 0.8;
+}
+
+/*  Custom Search controls */
+.form-control {
+  width: 400px;
+  display: inline;
+  cursor: pointer;
+}
+input {
+  margin: 0px;
+}
+
+.searchBtn {
+  margin: 0px;
+}
+
+#container-search {
+  background-color: #4e4e4e;
+  opacity: 0.9;
+  padding: 5px 5px;
+  /* border-radius: 10px; */
+  padding: 10px;
+  margin: auto;
+}
+
+#searchclear {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  height: 14px;
+  margin: auto;
+  font-size: 14px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+/* Custom IDs */
+#content {
+  background-image: url("../images/moviefu-bg.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 10px;
+  /* background-size: 100%; */
+  height: 100vh;
+  /* height: 100%; */
+}
+
+#container-main {
+  background-color: black;
+  opacity: 0.9;
+  padding: 10px;
+  margin: auto;
+}
+#container-body {
+  width: 1008px;
+  margin: auto;
+}
+/* Custom classess */
+.cardTitleFont {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #747378;
+  font-size: 17px;
+}
+.font1 {
+  color: #a6a4a9;
+}
+
+.font2 {
+  color: #747378;
+}
+
+.font3 {
+  color: #952322;
+}
+.faTitleFont {
+  color: red;
+}
