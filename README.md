@@ -64,21 +64,22 @@ _Initital Firebase authentication:
          
  
  AJAX call for OMDB:
-          * Creates Varible poster to hold the poster img retrieved from omdb API
-          * Appends poster image to omdb Div
-          * For Grabbing Movie Details - OMDB API Reponse Needed
-          * Grabs omddAPI response.Title and appends it to #title div
-          * Grabs omddAPI response.Released and appends it to #relased diV  
-          * Grabs omddAPI response.Rated and appends it to #rated diV  
-          * Grabs omddAPI response.Runtime and appends it to #runtime div         
-          * Grabs omdbAPI response.Genre and appends it to #genre div
-          * Referencing a JSON example of an OMDB AJAX response
-          * Just in case OMDB's API isn't working 
-          * Will always return data for "Interstellar"
-          * Remove before final deployment
-          * $.getJSON("https://api.myjson.com/bins/1g31en", function(data) {
-          * console.log(data); 
-          * console.log("json name: " + data.name);
+ 
+ * Creates Varible poster to hold the poster img retrieved from omdb API
+ * Appends poster image to omdb Div
+ * For Grabbing Movie Details - OMDB API Reponse Needed
+ * Grabs omddAPI response.Title and appends it to #title div
+ * Grabs omddAPI response.Released and appends it to #relased diV  
+ * Grabs omddAPI response.Rated and appends it to #rated diV  
+ * Grabs omddAPI response.Runtime and appends it to #runtime div         
+ * Grabs omdbAPI response.Genre and appends it to #genre div
+ * Referencing a JSON example of an OMDB AJAX response
+ * Just in case OMDB's API isn't working 
+ * Will always return data for "Interstellar"
+ * Remove before final deployment
+ * $.getJSON("https://api.myjson.com/bins/1g31en", function(data) {
+ * console.log(data); 
+ * console.log("json name: " + data.name);
        
 
 #### Debugging methods
