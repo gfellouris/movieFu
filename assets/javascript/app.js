@@ -92,11 +92,11 @@ $(document).ready(function () {
     
     
       // When button "GO" is clicked.......
-      $("#GO").on("click", function (event) {
-            event.preventdefault();
+      $("#movieSubmit").on("click", function (event) {
+            event.preventDefault();
     
         // Pull text from search box
-        var searchParam = $("#search-box").val().trim();
+        var searchParam = $("#movieSearch").val().trim();
         console.log(searchParam);
     
     
@@ -162,6 +162,13 @@ $(document).ready(function () {
           method: "GET"
         }).then(function (omdbResponse) {
           console.log(omdbResponse);
+          
+          var omdbDiv = $("#poster")
+          // Creates Varible poster to hold the poster img retrieved from omdb API
+            var poster = omdbResponse.Poster
+            var image = $("<img>").attr("src", poster);
+          // Appends poster image to omdb Div
+            omdbDiv.html(image);
 
 
           // For Grabbing Movie Details - OMDB API Reponse Needed
