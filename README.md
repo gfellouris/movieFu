@@ -79,6 +79,8 @@ _Initital Firebase authentication: *Choosing Google Auth Provider to use in fire
 #### For Bootstrap styling
 
 ## Links
+__Click on link to opne website__
+
 https://imgur.com/a/Ro7x2SI - automatic!
 [imgur](http://imgur.com)
 
