@@ -28,21 +28,21 @@ _Firebase used configurations objects:
                                      
 _Initital Firebase authentication: 
 
-*Choosing Google Auth Provider to use in firebase auth settings
-*Assigning white listed domains where it is allowed (ex: localhost) 
-*Login Button click event listener and associated 'login' function
-*When log-in is clicked, it changes the button's associated data to 'log-out' stuff
-*Adding a logout Button listener and function
-*Using an arrow function to handle the firebase auth function in this case)
-*tells firebase to make the user to authenticate using the selected providers (GoogleAuth                                      *The promise function then returns an object of the user's info
-*(ex: email, name, gmail avatar img)
-*google handles all password security/encryption 
-*runs a 'isLoggedIn' function if authentication is successful
-*If google returns an error, this code logs those errors for reference
-*Handle Errors here.
-*Functions that handle what happens after a user logs in or out (Makes login and log out                                       visiable for users
-*When button "GO" is clicked.......
-*Pull text from search box_
+* Choosing Google Auth Provider to use in firebase auth settings
+* Assigning white listed domains where it is allowed (ex: localhost) 
+* Login Button click event listener and associated 'login' function
+* When log-in is clicked, it changes the button's associated data to 'log-out' stuff
+* Adding a logout Button listener and function
+* Using an arrow function to handle the firebase auth function in this case)
+* tells firebase to make the user to authenticate using the selected providers (GoogleAuth                                      * The promise function then returns an object of the user's info
+* (ex: email, name, gmail avatar img)
+* google handles all password security/encryption 
+* runs a 'isLoggedIn' function if authentication is successful
+* If google returns an error, this code logs those errors for reference
+* Handle Errors here.
+* Functions that handle what happens after a user logs in or out (Makes login and log out                                       visiable for users
+* When button "GO" is clicked.......
+* Pull text from search box_
 
 ## AJAX
 
@@ -64,21 +64,21 @@ _Initital Firebase authentication:
          
  
  AJAX call for OMDB:
-          *Creates Varible poster to hold the poster img retrieved from omdb API
-          *Appends poster image to omdb Div
-          *For Grabbing Movie Details - OMDB API Reponse Needed
-          *Grabs omddAPI response.Title and appends it to #title div
-          *Grabs omddAPI response.Released and appends it to #relased diV  
-          *Grabs omddAPI response.Rated and appends it to #rated diV  
-          *Grabs omddAPI response.Runtime and appends it to #runtime div         
-          *Grabs omdbAPI response.Genre and appends it to #genre div
-          *Referencing a JSON example of an OMDB AJAX response
-          *Just in case OMDB's API isn't working 
-          *Will always return data for "Interstellar"
-          *Remove before final deployment
-          *$.getJSON("https://api.myjson.com/bins/1g31en", function(data) {
-          *console.log(data); 
-          *console.log("json name: " + data.name);
+          * Creates Varible poster to hold the poster img retrieved from omdb API
+          * Appends poster image to omdb Div
+          * For Grabbing Movie Details - OMDB API Reponse Needed
+          * Grabs omddAPI response.Title and appends it to #title div
+          * Grabs omddAPI response.Released and appends it to #relased diV  
+          * Grabs omddAPI response.Rated and appends it to #rated diV  
+          * Grabs omddAPI response.Runtime and appends it to #runtime div         
+          * Grabs omdbAPI response.Genre and appends it to #genre div
+          * Referencing a JSON example of an OMDB AJAX response
+          * Just in case OMDB's API isn't working 
+          * Will always return data for "Interstellar"
+          * Remove before final deployment
+          * $.getJSON("https://api.myjson.com/bins/1g31en", function(data) {
+          * console.log(data); 
+          * console.log("json name: " + data.name);
        
 
 #### Debugging methods
