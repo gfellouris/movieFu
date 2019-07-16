@@ -12,9 +12,9 @@ _MovieFu is a finder. The website interacts with complex API's to give users an 
 *_UTELLI_: For the utelly API we were only allowed to make 1000 free calls. After that they would have charged $0.01 per call. To avoid hitting this limit we saved a response from Utelly for “Interstellar” as a JSON file. This file was saved to http://myjson.com/ so it could be referenced during development instead of making AJAX calls. Once development was complete, we re-added the Utelly ajax call and removed the static json reference.*
 
 ## FireBase
-_Firebase used configurations objects:* apiKey:1
-                                      * authDomain:2
-                                      * databaseURL:3
+_Firebase used configurations objects: 1.apiKey:1
+                                      2.authDomain:2
+                                      3.databaseURL:3
                                       * projectId:4
                                       * storageBucket: 5
                                       * messagingSenderId:6 
