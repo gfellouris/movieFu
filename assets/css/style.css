@@ -16,6 +16,9 @@ img {
   height: auto;
 }
 
+.col-lg-6 {
+  padding: 5px;
+}
 /*  Custom Search controls */
 #movieSearch {
   /* width: 400px; */
