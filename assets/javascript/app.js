@@ -92,7 +92,8 @@ $(document).ready(function () {
     
     
       // When button "GO" is clicked.......
-      $("#GO").on("click", function (letsGOOO) {
+      $("#GO").on("click", function (event) {
+            event.preventdefault();
     
         // Pull text from search box
         var searchParam = $("#search-box").val().trim();
