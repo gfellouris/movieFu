@@ -9,16 +9,16 @@ _MovieFu is a finder. The website interacts with complex API's to give users an 
 ## ***Code Explaination:*** 
 
 #### Key API's used:
-*_UTELLI_: For the utelly API we were only allowed to make 1000 free calls. After that they would have charged $0.01 per call. To avoid hitting this limit we saved a response from Utelly for “Interstellar” as a JSON file. This file was saved to http://myjson.com/ so it could be referenced during development instead of making AJAX calls. Once development was complete, we re-added the Utelly ajax call and removed the static json reference.
+*_UTELLI_: For the utelly API we were only allowed to make 1000 free calls. After that they would have charged $0.01 per call. To avoid hitting this limit we saved a response from Utelly for “Interstellar” as a JSON file. This file was saved to http://myjson.com/ so it could be referenced during development instead of making AJAX calls. Once development was complete, we re-added the Utelly ajax call and removed the static json reference.*
 
 ## FireBase
 _Firebase used configurations objects:* apiKey: 
-                                      * authDomain: 
-                                      * databaseURL:
-                                      * projectId:
-                                      * storageBucket: 
-                                      * messagingSenderId: 
-                                      * appId: 
+                                      * authDomain:* 
+                                      * databaseURL:*
+                                      * projectId:*
+                                      * storageBucket: *
+                                      * messagingSenderId:* 
+                                      * appId:*_
 _Initital Firebase authentication: *Choosing Google Auth Provider to use in firebase auth settings
                                    *Assigning white listed domains where it is allowed (ex: localhost) 
                                    *Login Button click event listener and associated 'login' function
