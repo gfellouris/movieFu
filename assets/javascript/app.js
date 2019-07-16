@@ -105,54 +105,50 @@ $(document).ready(function () {
     
         // AJAX CALL FOR UTELLY API
         // Leave commented during development to reduce amount of calls made
-        // $.ajax({
-        //   url: "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=" + searchParam + "&country=us",
-        //   method: "GET",
-        //   headers: {
-        //     "X-RapidAPI-Host": "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
-        //     "X-RapidAPI-Key": "d6bd752cddmshce9fab663c6a442p1574b2jsncf974a1b4d76",  
-        //   }
-        // }).then(function(utellyResponse) {
-        //   console.log("UTELLY RESPONSE")
-        //     console.log(utellyResponse);
-        //     console.log("=================================")
+        $.ajax({
+          url: "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=" + searchParam + "&country=us",
+          method: "GET",
+          headers: {
+            "X-RapidAPI-Host": "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
+            "X-RapidAPI-Key": "d6bd752cddmshce9fab663c6a442p1574b2jsncf974a1b4d76",  
+          }
+        }).then(function(data) {
+          console.log("UTELLY RESPONSE")
+            console.log(data);
+            console.log("=================================")
         // });
     
         // Referencing a link to an example of a UTELLY AJAX response rather then making calls to save $$
         // This will always return data for the movie "Interstellar"
         // Remove before final deployment
-        $.getJSON("https://api.myjson.com/bins/173e67", function (data) {
-          console.log(data);
-          console.log(data.results[0].locations[0].display_name);
+        // $.getJSON("https://api.myjson.com/bins/173e67", function (data) {
+        //   console.log(data);
+        //   console.log(data.results[0].locations[0].length);         
 
-          // Creating a varible tht will be assigneto the #provider1 div
-            var iconDiv1 = $("#icon1");
-      // Grabing utelly data and pulling from the it the icon property
-            var icon1 = data.results[0].locations[0].icon;
-      // Attributing to iconimg1 an img and attribute search the url from the utelly data response
-            var iconIMG1 = $("<img>").attr("src", icon1);
-      // Appending the img to the iconDiv variable
-            iconDiv1.html(iconIMG1);
-            console.log(icon1);
-      
-      // Creating a varible tht will be assigneto the #provider1 div
-            var iconDiv2 = $("#icon2");
-      // Grabing utelly data and pulling from the it the icon property
-            var icon2 = data.results[0].locations[1].icon;
-      // Attributing to iconimg1 an img and attribute search the url from the utelly data response
-            var iconIMG2 = $("<img>").attr("src", icon2);
-      // Appending the img to the iconDiv variable
-            iconDiv2.html(iconIMG2);
-            console.log(icon2);     
-      
-          
-      
-      // Preparing to append data from the utelly api call to provider1 div.
-            $("#provider1").html( data.results[0].locations[0].display_name);
-            console.log( "Steaming Service: " + data.results[0].locations[0].display_name);
-      // Preparing to append data from the utelly api call to provider2 div.     
-           $("#provider2").html( data.results[0].locations[1].display_name);
-            console.log(data.results[0].locations[1].display_name);
+        var tableBody = $("#infoBoxes");
+        tableBody.empty();
+        for(i = 0; i < data.results[0].locations.length; i++){
+          // Create new table row
+          var newRow = $("<tr>");
+          // create new cell
+          var locationDiv = $("<td>");
+          // save location info
+          var location = data.results[0].locations[i].display_name;
+          // Save location info to locationDiv
+          locationDiv.text(location);
+
+          // save URL info
+          var urlDIV = $("<td>");
+          var url = data.results[0].locations[i].url;
+          var urlLink = $("<a>").attr("href", url)
+          urlLink.attr("target", "_blank");
+          urlLink.text(location);
+          urlDIV.append(urlLink);
+
+          newRow.append(locationDiv);
+          newRow.append(urlDIV);
+          tableBody.append(newRow);
+        }
     });
     
     
