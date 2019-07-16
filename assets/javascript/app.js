@@ -135,7 +135,28 @@ $(document).ready(function () {
           // save location info
           var location = data.results[0].locations[i].display_name;
           // Save location info to locationDiv
-          locationDiv.text(location);
+          
+          if (location === "Netflix"){
+            var locationLogo = $("<img>").attr("src", "/assets/images/netflix.png")
+            locationLogo.attr("width", "75px");
+            locationLogo.attr("height", "auto");
+            locationDiv.append(locationLogo);
+          }
+          else if (location === "iTunes"){
+            var locationLogo = $("<img>").attr("src", "/assets/images/itunes.png")
+            locationLogo.attr("width", "75px");
+            locationLogo.attr("height", "auto");
+            locationDiv.append(locationLogo);
+          }
+          else if (location === "Amazon Prime"){
+            var locationLogo = $("<img>").attr("src", "/assets/images/amazon_prime_logo.png")
+            locationLogo.attr("width", "75px");
+            locationLogo.attr("height", "auto");
+            locationDiv.append(locationLogo);
+          }
+          else{
+            locationDiv.text(location);
+          }
 
           // save URL info
           var urlDIV = $("<td>");
