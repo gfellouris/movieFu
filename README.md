@@ -83,7 +83,12 @@ _Initital Firebase authentication:
        
 
 #### Debugging methods
-
+* Console.log
+* Reference JSON instead making AJAX call for static responses to work of verse and making a new call every time we ran the software
+* Commit out Firebase authentication to reduce the step for out debugging method
+* Rather than changing the orginial NavBar we build an alternativie NavBar to compare and contrast two for debugging methods
+* For Firebase we white-listed (Allowing authentication) the local.host & 127.0.0.1 (ip address) to be tested locally.
+* Team always USED the same search parameter for the OMDB call to double check the data we were reference is accurate.
 ## UI
 
 #### For Bootstrap styling
