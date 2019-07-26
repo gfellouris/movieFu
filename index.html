@@ -58,7 +58,7 @@
     <div class="container" id="container-main">
       <div class="container" id="container-body">
 
-       
+
         <br>
 
         <!-- Container for Grid System-->
@@ -72,22 +72,24 @@
                 </div>
                 <div class="card-body">
                   <div id="movie-provider"></div>
-                   <!-- Table for updating which service carries the users input movie title-->
-                   <table class="table table-dark table-hover">
-                     <thead>
-                       <tr>
-                         <!-- Table Headers for Utelly API-->
-                         <th scope="col">Available</th>
-                         <th scope="col">Provider</th>
-                        <!-- <th scope="col">Subscription</th>
+                  <!-- Table for updating which service carries the users input movie title-->
+                  <div style="overflow-x:auto;">
+                    <table class="table table-dark table-hover">
+                      <thead>
+                        <tr>
+                          <!-- Table Headers for Utelly API-->
+                          <th scope="col">Available</th>
+                          <th scope="col">Provider</th>
+                          <!-- <th scope="col">Subscription</th>
                          <th scope="col">Buy</th>
                          <th scope="col">Rent</th> -->
-                       </tr>
-                     </thead>
-                     <tbody id ="infoBoxes">
-                      
-                     </tbody>
-                   </table>
+                        </tr>
+                      </thead>
+                      <tbody id="infoBoxes">
+
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -107,7 +109,7 @@
                   <div id="rated"></div>
                   <div id="runtime"></div>
                   <div id="genre"></div>
-                
+
                 </div>
               </div>
 
@@ -122,10 +124,10 @@
 
 
   <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
- <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
 
   <!-- Add Firebase products that you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
   <script src="assets/javascript/app.js"></script>
 </body>
 

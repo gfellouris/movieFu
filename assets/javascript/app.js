@@ -137,19 +137,19 @@ $(document).ready(function () {
           // Save location info to locationDiv
           
           if (location === "Netflix"){
-            var locationLogo = $("<img>").attr("src", "/assets/images/netflix.png")
+            var locationLogo = $("<img>").attr("src", "assets/images/netflix.png")
             locationLogo.attr("width", "75px");
             locationLogo.attr("height", "auto");
             locationDiv.append(locationLogo);
           }
           else if (location === "iTunes"){
-            var locationLogo = $("<img>").attr("src", "/assets/images/itunes.png")
+            var locationLogo = $("<img>").attr("src", "assets/images/itunes.png")
             locationLogo.attr("width", "75px");
             locationLogo.attr("height", "auto");
             locationDiv.append(locationLogo);
           }
           else if (location === "Amazon Prime"){
-            var locationLogo = $("<img>").attr("src", "/assets/images/amazon_prime_logo.png")
+            var locationLogo = $("<img>").attr("src", "assets/images/amazon_prime_logo.png")
             locationLogo.attr("width", "75px");
             locationLogo.attr("height", "auto");
             locationDiv.append(locationLogo);

@@ -11,9 +11,17 @@ body {
   opacity: 0.8;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.col-lg-6 {
+  padding: 5px;
+}
 /*  Custom Search controls */
 #movieSearch {
-  width: 400px;
+  /* width: 400px; */
   /* display: inline; */
   cursor: pointer;
 }
@@ -55,8 +63,8 @@ body {
   margin: auto;
   padding: 10px;
   /* background-size: 100%; */
-  height: 100vh;
-  /* height: 100%; */
+  /* height: 100vh; */
+  height: 100%;
 }
 
 #container-main {
@@ -67,7 +75,7 @@ body {
   
 }
 #container-body {
-  width: 1008px;
+  /* width: 1008px; */
   margin: auto;
   visibility: hidden;
 }
