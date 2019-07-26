@@ -8,6 +8,51 @@ _MovieFu is a finder. The website interacts with complex API's to give users an 
 
 ## ***Code Explaination:*** 
 
+Usage: If used correctly your search should look someting like https://imgur.com/a/Ro7x2SI
+If you search for another movie or tv show it will overwrite your previous search.
+
+Favicon - Added unique web icon that appears on the tab in the browser. Will distinguish the the tab even further from others
+
+
+BootStrap Elements:
+
+Font Awesome - Font Awesome is a font and icon toolkit based on CSS and LESS it is incorporated with Bootstrap
+
+Gridwork - Using Bootstrap css library the index.html is set up in a grid system with minor css elements added to further improve the look of the ui on the website.
+
+Bootstrap Overview:
+<div class="card-body">
+
+<table class="table table-dark table-hover"> - Assigns a dark background to the tablet and hover shows what item your cursor is currently over.
+
+<strong><i class="fas fa-ticket-alt faTitleFont"></i> Movie/TV Provider</strong> - 
+
+<nav class="navbar"> - Setting up a nav bar
+
+<span class="navbar-text text-white mr-4 p-0" id="user"></span> - Changes navbar text to white
+
+<button class="btn btn-danger text-center log-in">Login with Google</button> Danger is a red button class from bootstrap, and log in s to definite what that button is doing.
+
+
+Google Fonts - Used to further decorate the fonts used throughout the website to fit the theme.
+
+<link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
+
+Firebase - Used to authenticate the user before using the search tool. Site is co
+
+
+
+Favicon - Added unique web icon that appears on the tab in the browser. Will distinguish the the tab even further from others
+
+Support: Contact one of the many contributers to this project (George Fellouris, Eric Thiel, Kristen Sherman, Gergory Manco)
+
+Roadmap: If further developed further API functionality maybe to even include If its able to be rented , how much it cost to buy or if a subscription is needed.
+
+
+
+
 #### Key API's used:
 *_UTELLI_: For the utelly API we were only allowed to make 1000 free calls. After that they would have charged $0.01 per call. To avoid hitting this limit we saved a response from Utelly for “Interstellar” as a JSON file. This file was saved to http://myjson.com/ so it could be referenced during development instead of making AJAX calls. Once development was complete, we re-added the Utelly ajax call and removed the static json reference.*
 
