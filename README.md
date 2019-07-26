@@ -2,14 +2,14 @@
 
 ### This project was created as a part of our Rutgers Bootcamp team building training. It demonstrates the knowledge, skills and abilities that our team acquired over the course of our four week training camp. MovieFu is a tool that allows users to watch a wide range of award-winning T.V. shows, movies, documentaries and more through different streaming providers such as Netflix, Hulu, FIO's, Amazon and many more. 
 
+Live Link: https://gfellouris.github.io/movieFu/
 #### Description of MovieFu
 
 _MovieFu is a finder. The website interacts with complex API's to give users an simple way to find and enjoy a  movie, t.v. show etc of their choice. This is an important feature to have while searching for something good to watch during your free time. The websites helps manage different streaming providers inventory quickly.  MovieFu provides users with the access to locating enertainment quickly instead of searching each providers inventory one by one._
 
 ## ***Code Explaination:*** 
 
-Usage: If used correctly your search should look someting like https://imgur.com/a/Ro7x2SI
-If you search for another movie or tv show it will overwrite your previous search.
+Usage: If you search for another movie or tv show it will overwrite your previous search.
 
 Favicon - Added unique web icon that appears on the tab in the browser. Will distinguish the the tab even further from others
 
