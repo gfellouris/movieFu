@@ -165,7 +165,7 @@ $(document).ready(function () {
           urlLink.attr("target", "_blank");
           urlLink.text(location);
           urlDIV.append(urlLink);
-
+          // Appending new divs and rows to the table
           newRow.append(locationDiv);
           newRow.append(urlDIV);
           tableBody.append(newRow);
